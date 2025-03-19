@@ -19,21 +19,12 @@ Check out the live version here: [GPA Calculator](https://gpacalculator-mohd.ver
 - **Framework:** React.js
 - **Deployment:** Vercel
 
-## 📸 Preview
-
-![GPA Calculator Screenshot](https://via.placeholder.com/800x400.png?text=Website+Preview)
-
 ## 📌 How to Use
 
 1. Select your course grades and corresponding credit hours.
 2. Click on the "Calculate" button.
 3. Instantly view your GPA results!
 
-## 🎯 Future Enhancements
-
-- 🔹 Dark Mode support
-- 🔹 Save past GPA records
-- 🔹 Support for multiple grading systems
 
 ## 💡 Contribute
 
@@ -41,7 +32,7 @@ Feel free to report issues or suggest improvements! Contributions are welcome.
 
 ## 📩 Contact
 
-For any queries, reach out at: **mohd@example.com**
+For any queries, reach out at: **mohammedabdi.ta@gmail.com**
 
 ---
 
