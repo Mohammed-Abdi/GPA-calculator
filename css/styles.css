@@ -1,0 +1,24 @@
+@import url(global/importer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--txt-color);
+  background: var(--smokeyWhite);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  padding-top: 8rem;
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}

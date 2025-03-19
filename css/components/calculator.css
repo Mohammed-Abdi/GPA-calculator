@@ -1,0 +1,183 @@
+.wrapper {
+  width: 18.75rem;
+  min-height: 18.75rem;
+  padding: 1.25rem;
+  padding-top: 2.5rem;
+  border-radius: 0.5rem;
+  background: var(--white-clr);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.gpaDisplay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 9.375rem;
+  aspect-ratio: 1/1;
+  margin: auto;
+  margin-block: 2.5rem;
+  background: var(--white-clr);
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  gap: 0.15rem;
+  color: var(--fadedBlack);
+  border: 4px solid var(--fadedBlack);
+  transition: all 0.3s ease-in-out;
+}
+
+.gpaDisplay.show {
+  display: flex;
+}
+
+.gpaDisplay.excellent {
+  border: 4px solid var(--excellent);
+}
+
+.gpaDisplay.good {
+  border: 4px solid var(--good);
+}
+
+.gpaDisplay.bad {
+  border: 4px solid var(--bad);
+}
+
+.gpaDisplay.excellent .gpa {
+  color: var(--excellent);
+}
+
+.gpaDisplay.good .gpa {
+  color: var(--good);
+}
+
+.gpaDisplay.bad .gpa {
+  color: var(--bad);
+}
+
+.gpa {
+  font-size: 2rem;
+}
+
+.wrapper .container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 100%;
+  min-height: 15rem;
+}
+
+.wrapper .container.hide {
+  display: none;
+}
+
+.btns {
+  display: flex;
+  gap: 0.625rem;
+  padding-top: 1.5rem;
+}
+
+.btn {
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.75rem;
+  height: 2.1875rem;
+  width: 100%;
+  align-self: end;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--black-color);
+  background: transparent;
+}
+
+.btn.none {
+  pointer-events: none;
+}
+
+.eval-btn {
+  color: var(--white-clr);
+  background: #000;
+}
+
+.add-btn:active,
+.eval-btn:active {
+  opacity: 0.7;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.courseName {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.courseContainer,
+.grade {
+  display: flex;
+  align-items: center;
+}
+
+.courseContainer {
+  gap: 0.625rem;
+  width: 100%;
+}
+
+.grade {
+  justify-content: center;
+  width: 1.5625rem;
+  aspect-ratio: 1/1;
+  font-weight: 600;
+  font-size: 0.75rem;
+  position: absolute;
+  color: var(--fadedBlack);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  right: 1.5625rem;
+}
+
+.grade.excellent {
+  color: var(--excellent);
+}
+
+.grade.good {
+  color: var(--good);
+}
+
+.grade.bad {
+  color: var(--bad);
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-clr);
+  background: var(--fadedWhite);
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+input::placeholder {
+  opacity: 0.7;
+}
+
+.bx-revision {
+  font-size: 2.5rem;
+  color: var(--fadedBlack);
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.bx-revision.show {
+  transform: scale(1);
+}

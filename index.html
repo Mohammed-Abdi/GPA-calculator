@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gpa calculator that evaluates your grade and give you exact GPA"
+    />
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/icons/GPAcalculator-Logo-black.svg" />
+    <link
+      rel="icon"
+      href="assets/icons/GPAcalculator-Logo-white.svg"
+      media="(prefers-color-scheme:dark)"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/grader.js" defer></script>
+    <script src="js/menu.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menuAndLogo">
+          <div class="menu"><i class="bx bx-menu"></i></div>
+          <a href="#" class="logo">
+            <img
+              class="logoIcon"
+              src="assets/icons/GPAcalculator-Logo.svg"
+              alt="Chroma Combos Logo"
+            />
+            <span class="logoTxt"
+              >GPA<span class="colored">calculator</span></span
+            >
+          </a>
+        </div>
+      </nav>
+      <div class="sideNav">
+        <span class="mainLogo"
+          >M<img
+            src="assets/icons/GPAcalculator-Logo-black.svg"
+            alt=""
+          />HD</span
+        >
+        <hr />
+        <section class="sideNavMiddle">
+          <a href="#" class="logo">
+            <img
+              src="assets/icons/GPAcalculator-Logo.svg"
+              alt="Chroma Combos Logo"
+            />
+            <span class="logoTxt"
+              >GPA<span class="colored">calculator</span></span
+            >
+          </a>
+          <a href="#" class="logo">
+            <img src="assets/icons/Logo-yellow.svg" alt="Chroma Combos Logo" />
+            <span class="logoTxt">COUNT<span class="colored">save</span></span>
+          </a>
+          <a href="#" class="logo">
+            <img src="assets/icons/Logo-purple.svg" alt="Chroma Combos Logo" />
+            <span class="logoTxt"
+              >AZKAR<span class="colored">afterSalat</span></span
+            >
+          </a>
+          <a href="#" class="logo">
+            <img src="assets/icons/Logo-green.svg" alt="Chroma Combos Logo" />
+            <span class="logoTxt"
+              >GYM<span class="colored">anagement</span></span
+            >
+          </a>
+        </section>
+        <hr />
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="gpaDisplay"><span class="gpa"></span>GPA</div>
+        <div class="container">
+          <section class="course">
+            <span class="courseName">Course 1</span>
+            <section class="courseContainer">
+              <input
+                type="text"
+                class="creditHour"
+                placeholder="Credit Hour"
+                oninput="grader()"
+              />
+              <input
+                type="text"
+                class="mark"
+                placeholder="Mark from 100"
+                oninput="grader()"
+              />
+              <div class="grade"></div>
+            </section>
+          </section>
+        </div>
+        <div class="btns">
+          <button class="btn add-btn" onclick="newCourse()">Add Course</button>
+          <button class="btn eval-btn" onclick="evaluateX()">Calculate</button>
+        </div>
+      </div>
+      <i class="bx bx-revision" onclick="resetProcess()"></i>
+    </main>
+  </body>
+</html>

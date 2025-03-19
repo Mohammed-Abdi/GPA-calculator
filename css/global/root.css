@@ -1,0 +1,16 @@
+:root {
+  --white-clr: #fff;
+  --smokeyWhite: #f5f5f7;
+  --fadedWhite: #f6f6f6;
+  --border-clr: #b0b0b0;
+  --black-color: #000;
+  --fadedBlack: #444747;
+  --fadeBlack: #393939;
+  --excellent: rgb(69, 172, 1);
+  --good: rgb(192, 163, 0);
+  --bad: rgb(192, 0, 0);
+  --red: rgb(192, 0, 0);
+  /* sizes */
+  /*--max-width: 1250px;*/
+  --padding: 1.25rem;
+}
