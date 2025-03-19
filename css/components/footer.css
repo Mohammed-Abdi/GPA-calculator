@@ -1,0 +1,24 @@
+footer {
+  background: var(--black-color);
+  color: var(--white-clr);
+  padding: 1.25rem 1.25rem 3rem;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+footer p {
+  max-width: 40vw;
+  font-size: 0.75rem;
+  opacity: 0.75;
+  word-wrap: break-word;
+}
