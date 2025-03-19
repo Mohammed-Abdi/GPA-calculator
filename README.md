@@ -16,7 +16,6 @@ Check out the live version here: [GPA Calculator](https://gpacalculator-mohd.ver
 ## 🛠️ Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript
-- **Framework:** React.js
 - **Deployment:** Vercel
 
 ## 📌 How to Use
