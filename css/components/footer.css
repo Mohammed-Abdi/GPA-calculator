@@ -1,10 +1,14 @@
 footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   background: var(--black-color);
   color: var(--white-clr);
   padding: 1.25rem 1.25rem 3rem;
 }
 
-.footerLeft {
+.footerLeft,
+.footerRight {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -17,8 +21,31 @@ footer {
 }
 
 footer p {
-  max-width: 40vw;
+  max-width: 60rem;
   font-size: 0.75rem;
   opacity: 0.75;
   word-wrap: break-word;
+}
+
+.footerRight div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.75rem;
+}
+
+.footerRight div section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer .wrappers {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+footer .gradesValue {
+  opacity: 0.75;
 }
